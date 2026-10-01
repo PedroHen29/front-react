@@ -42,7 +42,7 @@ function App() {
       {/** quando pokemon for true e loading for false */}
       {pokemon && !false && (
         <div id="card-pokemon">
-          <img src={pokemon.sprites.front_default} alt={pokemon.name} />
+          <img src={pokemon.sprites.versions['generation-v']['black-white'].animated.front_default} alt={pokemon.name} />
           <h2>{pokemon.name}</h2>
         </div>
       )}
